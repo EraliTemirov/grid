@@ -1,0 +1,111 @@
+.parent {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "a1  a1  a2  a2  a2  a3 a3 a3 a3 a4  a4"
+    "a5  a5  a2  a2  a2  a3 a3 a3 a3 a6  a6"
+    "a7  a7  a8  a9  a9  a3 a3 a3 a3 a10 a10"
+    "a11 a11 a11 a11 a11 a3 a3 a3 a3 a12 a12";
+}
+.child {
+  &-1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    padding-top: 30px;
+    grid-area: a1;
+  }
+  &-2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: pink;
+    padding-top: 30px;
+    grid-area: a2;
+  }
+  &-3 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background-color: rgb(227, 140, 10);
+    padding-top: 400px;
+    grid-area: a3;
+  }
+  &-4 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: yellow;
+    padding-top: 30px;
+    grid-area: a4;
+  }
+  &-5 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    padding-top: 30px;
+    grid-area: a5;
+  }
+  &-6 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: blue;
+    padding-top: 30px;
+    grid-area: a6;
+  }
+  &-7 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: yellow;
+    padding-top: 30px;
+    grid-area: a7;
+  }
+  &-8 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    padding-top: 30px;
+    grid-area: a8;
+  }
+  &-9 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    padding-top: 30px;
+    grid-area: a9;
+  }
+  &-10 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: grey;
+    padding-top: 30px;
+    grid-area: a10;
+  }
+
+  &-11 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgb(124, 14, 228);
+    padding-top: 30px;
+    grid-area: a11;
+  }
+  &-12 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgb(228, 14, 14);
+    padding-top: 30px;
+    grid-area: a12;
+  }
+}
